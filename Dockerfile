@@ -1,4 +1,4 @@
-FROM golang:1.16.5-stretch as build
+FROM golang as build
 WORKDIR /build
 COPY . .
 RUN go mod download
